@@ -14,8 +14,9 @@ export const UserProvider = ({ children }) => {
     const registerUser = async (user) => {
         try {
             setIsloading(true)
-            const response = await customFetch.post('/auth/testingRegister', user)
+            const response = await customFetch.post('/auth/register', user)
             const newUser = response.data.user
+            console.log(newUser);
             setUser(newUser)
             addUserToLocalStorage(newUser)
             setIsloading(false)
@@ -29,7 +30,8 @@ export const UserProvider = ({ children }) => {
         try {
             setIsloading(true)
             const response = await customFetch.post('/auth/login', user)
-            const newUser = response.data.user
+            const newUser = response.data
+            console.log(response);
             setUser(newUser)
             addUserToLocalStorage(newUser)
             setIsloading(false)
