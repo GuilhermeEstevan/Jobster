@@ -12,11 +12,5 @@ O **Jobster** é um projeto desenvolvido como parte do curso de ReactJS, com o o
 
 - *Interface Gráfica Intuitiva*: Uma interface de usuário amigável permite aos usuários visualizar facilmente seus registros de trabalho mais recentes e importantes.
 
-## Como Usar
-
-1. **Clone o Repositório**: Para começar, clone este repositório em sua máquina local.
-
-   ```shell
-   git clone https://github.com/seu-usuario/jobster.git
 
 ![image](https://github.com/GuilhermeEstevan/Jobster/assets/115093310/b490a8c4-c307-4888-a37d-32bf9837ebb6)
