@@ -30,8 +30,8 @@ export const UserProvider = ({ children }) => {
         try {
             setIsloading(true)
             const response = await customFetch.post('/auth/login', user)
-            const newUser = response.data
-            console.log(response);
+            const newUser = response.data.user
+            console.log(newUser);
             setUser(newUser)
             addUserToLocalStorage(newUser)
             setIsloading(false)

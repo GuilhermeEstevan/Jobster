@@ -28,9 +28,12 @@ const JobsContainer = () => {
     )
   }
 
+  const startJob = (page - 1) * 10 + 1
+  const endJob = Math.min(page * 10, totalJobs)
+
   return (
     <Wrapper>
-      <h5>{totalJobs} job{jobs.length > 1 && 's'} found</h5>
+      <h5>{startJob} - {endJob} of {totalJobs} job{jobs.length > 1 && 's'} found</h5>
       <div className="jobs">
         {jobs.map((job) => {
 

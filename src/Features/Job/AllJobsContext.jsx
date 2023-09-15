@@ -96,6 +96,7 @@ export const AllJobsProvider = ({ children }) => {
                 stats: response.data.defaultStats,
                 monthlyApplications: response.data.monthlyApplications
             })
+            console.log(response);
             setIsLoading(false)
         } catch (error) {
             if (checkForUnauthorizedResponse(error)) {
