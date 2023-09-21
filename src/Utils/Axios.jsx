@@ -5,7 +5,7 @@ import axios from "axios";
 // })
 
 const customFetch = axios.create({
-    baseURL: 'https://temp-jobs-api-ogq6.onrender.com'
+    baseURL: 'https://temp-jobs-api-ogq6.onrender.com/api/v1'
 })
 
 
