@@ -5,7 +5,7 @@ import axios from "axios";
 // })
 
 const customFetch = axios.create({
-    baseURL: 'https://jobify-prod.herokuapp.com/api/v1/toolkit'
+    baseURL: 'https://temp-jobs-api-ogq6.onrender.com/api/v1'
 })
 
 
